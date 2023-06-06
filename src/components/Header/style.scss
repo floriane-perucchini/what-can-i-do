@@ -1,0 +1,15 @@
+@use '../../styles/vars' as vars;
+
+.header{
+  min-width: 100vw;
+  height: vars.$header-height;
+  text-align: center;
+  background-color: vars.$primary-color;
+
+  &_title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}

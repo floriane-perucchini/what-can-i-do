@@ -1,0 +1,58 @@
+@use '../../styles/vars' as vars;
+
+input[type="radio"]{
+  display: none;
+}
+
+label{
+  display: block;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  color: #000;
+  margin: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover{
+    background-color: vars.$secondary-color;
+    color: #fff;
+  }
+}
+
+input[type="radio"]:checked + label{
+  background-color: vars.$secondary-color;
+  color: #fff;
+}
+
+.Sidebar{
+  background-color: vars.$primary-color;
+  min-width: 15%;
+  height: calc( 100vh - vars.$header-height);
+  position: sticky;
+  padding: 0.4rem;
+
+
+  &_search-input{
+    margin: 0.3rem
+  }
+
+  &_search-type{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sidebar{
+    min-width: 100%;
+    height: auto;
+
+    &_search-type{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0.4rem;
+    }
+  }
+}

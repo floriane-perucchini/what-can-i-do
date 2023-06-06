@@ -1,0 +1,13 @@
+@use 'sass:color';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+$primary-color: #43b5a0;
+$primary-color-light: lighten($primary-color, 40%);
+$secondary-color: #491d88;
+$secondary-color-light: lighten($secondary-color, 50%);
+
+$header-height: 5rem;
+
+$principal-font: 'Nunito Sans', sans-serif;
